@@ -1,0 +1,84 @@
+@import "lib-reset.scss";
+
+/* Import lib-rem.scss if supportREM opened. */
+@import "lib-f.scss";
+.wrap{
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    line-height: 50px;
+}
+.navbar-arr{
+    position: relative;
+    float: left;
+    width: 50px;
+    margin-right: -50px;
+    background-color: #000;
+}
+.navbar-title{
+    float: right;
+    width: 100%;
+}
+.navbar-title .content{
+    display: block;
+    margin-left: 50px;
+    background-color: red;
+}
+/* 两列左侧自适应布局 */
+.f-cb{zoom: 1;}
+.f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:"."}
+.g-bd2{margin:0 0 10px;}
+.g-sd2{position:relative;float:right;width:150px;height:100px;margin-left:-150px;background-color: gray}
+.g-mn2{float:left;width:100%;}
+.g-mn2c{margin-right:150px;height: 100px;background-color: green}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+.toolbar{
+    width:1190px;
+    margin:0 auto;
+    height:36px;
+    background-color:#f5f5f5;
+    border-bottom:1px solid #ffffff;
+}
+.toolbar .lbar {
+
+
+}
+.toolbar .lbar li.first {
+    margin-left:0px;
+
+}
+.toolbar .lbar li {
+    list-style:none;
+    float:left;
+    margin-left:20px;
+    font-size:12px;
+    line-height:36px;
+
+}
+.toolbar .lbar li a{
+    margin-left:6px;
+}
+.toolbar .lbar li a.login{
+    color:#d7613e;
+}
+.toolbar .lbar li a.in{
+    color:#000;
+}
+.toolbar .rbar{
+ margin-right:136px;
+}
+.toolbar .rbar-arrow{
+width:12px;
+}
+.toolbar .rbar ul li{
+float:left;
+line-height:36px;
+margin:0px 10px 0px 0px ;
+}
