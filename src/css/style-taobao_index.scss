@@ -2,83 +2,131 @@
 
 /* Import lib-rem.scss if supportREM opened. */
 @import "lib-f.scss";
-.wrap{
-    width: 100%;
-    height: 100%;
+@import "lib-font.scss";
+ body{-webkit-font-smoothing: antialiased;}
+.toolbar { z-index: 999999; line-height: 36px; font-size: 12px; width: 1190px; margin: 0 auto; height: 36px; background-color: #f5f5f5; border-bottom: 1px solid #ffffff; }
+.toolbar .lbar { }
+.toolbar .lbar li.first { margin-left: 0px; }
+.toolbar .lbar li { list-style: none; float: left; margin-left: 20px; line-height: 36px; }
+.toolbar .lbar li a { margin-left: 6px; }
+.toolbar .lbar li a.login { color: #d7613e; }
+.toolbar .lbar li a.in { color: #000; }
+.toolbar .rbar a, .toolbar .rbar span { float: left; cursor: pointer; }
+.toolbar .rbar-arrow { width: 12px; height: 12px; margin: 12px 10px 0px 10px; background-image: url(../slice/arrow.png); background-repeat: no-repeat; }
+.toolbar .rbar-pipe { width: 30px; text-align: center; }
+.toolbar .rbar-shop { width: 12px; height: 12px; text-align: center; margin-top: 12px; background-image: url(../slice/shop.png); background-repeat: no-repeat; }
+.toolbar .rbar-xingxing { width: 12px; height: 12px; margin-top: 12px; text-align: center; background-image: url(../slice/xingxing.png); background-repeat: no-repeat; }
+.toolbar .rbar-more { width: 30px; height: 35px; text-align: center; background-image: url(../slice/more@2x.png); background-size: 15px 15px; background-position: 10px 10px; background-repeat: no-repeat; }
+.toolbar .rbar ul li { float: left; }
+.wrapall { width: 1190px; margin: 0 auto; }
+.wrapall i { font-family: "iconfont"; }
+.wrapall .sa-sub { width: 190px; float: left; margin-right: -190px; position: relative; }
+.sa-sub .logo { height: 150px; position: relative; top: 0px; left: 0px; background-color: #e15500; }
+.sa-sub .hd { position: relative; height: 35px; text-align: center; line-height: 35px; background-color: #e26433; color: #fff; }
+.sa-sub .hd a { display: none; text-align: center; line-height: 35px; color: #fff; }
+.sa-sub .hd a h3 { font-size: 15px; float: left; padding-left: 10px; }
+.sa-sub .hd a i { font-size: 15px; float: right; padding-right: 18px; }
+.sa-sub .hd .time { width: 100%; background-color: #dd0029; position: absolute; font-size: 15px; left: 0px; }
+.sa-sub .hd .time span { margin: 2px; padding: 2px; height: 15px; background-color: #611b21; }
+.sa-sub .list { font-size: 14px; background-color: #e26433; }
+.sa-sub .list ul li { line-height: 30px; height: 30px; padding: 0px 10px; }
+.sa-sub .list i.icons { color: #ea9f00; }
+.sa-sub .list i.arrow { font-size: 12px; float: right; color: #fff; margin-right: 10px; }
+.sa-sub .list span, .sa-sub .list span a { color: #fff; }
+.sa-body { float: right; width: 100%; }
+.sa-body-auto { margin-left: 200px; position: relative; }
+.sa-m-search { margin-left: 71px; margin-top: 45px; margin-right: 100px; }
+.sa-body-nav { height: 25px; }
+.sa-body-nav ul li { float: left; color: orangered; font-size: 13px; line-height: 25px; padding: 0px 12px; }
+.sa-body-nav ul li.z-sel { background-color: orangered; color: #fff; }
+.m-search { height: 40px;}
+.m-search .u-border{border: 3px solid orangered;height: 34px;width:500px; position: relative;}
+.m-search .u-btn{color:#FFFFFF;background-color: orangered;font-size: 18px;line-height: 40px;text-align: center;padding: 0px 40px;cursor: pointer;}
+.m-search .u-text{ width: 30px;  padding: 1px 8px;   font-size: 13px;  line-height: 19px; text-align: center;}
+.m-search .u-input{padding: 6px 0;
+    text-indent: 10px;
+    height: 22px;
+    line-height: 22px;
+    width: 472px;
+    border: none;
+    outline: 0;
+    background: #FFF;
+  }
+.m-search .u-holder{    z-index: 2;
+    position: absolute;
+    line-height: 34px;
+    left: 34px;
+    color: #9C9C9C;
+    cursor: text;
+    touch-action: none;
+    -ms-touch-action: none;
+    pointer-events: none;
+    -ms-pointer-events: none;
+    -webkit-user-select: none;}
+.m-search .u-searchicon{ font-size: 21px;
+    z-index: 2;
+    position: absolute;
+    left: 10px;
+    line-height: 34px;
+   color: #9C9C9C;
+    cursor: text;
+    touch-action: none;
+    -ms-touch-action: none;
+    pointer-events: none;
+    -ms-pointer-events: none;
+    -webkit-user-select: none;}
+.m-search .u-photoicon{    text-align: center;
+    position: absolute;
+    right: 0px;
+    width: 28px;
+    font-size: 15px;
+    line-height: 34px;
+    cursor: pointer;
+    color: #000;}
+.sa-m-ad { position: absolute; top: -18px; right: 40px; border: 1px solid red; height: 127px; width: 116px; }
+.m-hotword{
+    margin-left: 15px;
+    line-height: 44px;
+    margin-left: 70px;
 }
-.navbar{
-    height: 50px;
-    width: 100%;
-    color:#fff;
-    text-align: center;
-    line-height: 50px;
+.m-hotword a{
+    padding-right: 16px;
+    font-size: 13px;
+    line-height: 15px;
 }
-.navbar-arr{
+.m-navbar{
+    margin-top: 2px;
     position: relative;
+
+}
+.m-navbar i{
+    line-height: 30px;
+    font-size: 16px;
+    color:#c0c0c0;
+}
+.m-navbar  li {
     float: left;
-    width: 50px;
-    margin-right: -50px;
-    background-color: #000;
+    line-height: 30px;
+    font-size:16px;
+    text-align: center;
+    font-weight: 700;
+    padding:0px 4px;
+    margin: 0px 3px;
 }
-.navbar-title{
-    float: right;
-    width: 100%;
+.m-navbar li a {
+    padding:0px 5px;
 }
-.navbar-title .content{
-    display: block;
-    margin-left: 50px;
-    background-color: red;
-}
-/* 两列左侧自适应布局 */
-.f-cb{zoom: 1;}
-.f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:"."}
-.g-bd2{margin:0 0 10px;}
-.g-sd2{position:relative;float:right;width:150px;height:100px;margin-left:-150px;background-color: gray}
-.g-mn2{float:left;width:100%;}
-.g-mn2c{margin-right:150px;height: 100px;background-color: green}
-body, button, input, select, textarea {
-    font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
-}
-.toolbar{
-    width:1190px;
-    margin:0 auto;
-    height:36px;
-    background-color:#f5f5f5;
-    border-bottom:1px solid #ffffff;
-}
-.toolbar .lbar {
-
+.m-navbar .u-nav1{
 
 }
-.toolbar .lbar li.first {
-    margin-left:0px;
-
+.m-navbar .u-nav1 li{
+    color: orangered;
 }
-.toolbar .lbar li {
-    list-style:none;
-    float:left;
-    margin-left:20px;
-    font-size:12px;
-    line-height:36px;
-
+.m-navbar a{
+    color:inherit;
 }
-.toolbar .lbar li a{
-    margin-left:6px;
-}
-.toolbar .lbar li a.login{
-    color:#d7613e;
-}
-.toolbar .lbar li a.in{
-    color:#000;
-}
-.toolbar .rbar{
- margin-right:136px;
-}
-.toolbar .rbar-arrow{
-width:12px;
-}
-.toolbar .rbar ul li{
-float:left;
-line-height:36px;
-margin:0px 10px 0px 0px ;
+.m-navbar li:hover{
+    color: #FFFFFF;
+    border-radius: 15px;
+    background-color: orangered;
 }
